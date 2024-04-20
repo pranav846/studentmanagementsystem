@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&@-o*pb+_$x+gclovr4v98-(+-*@ey0yi+7qm(2g8i5#p6zt@8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['x23193867-student-mgmt-env.eba-ccixzksc.eu-west-1.elasticbeanstalk.com','03096e0cf6304f59b770dd2f8f6d29c9.vfs.cloud9.eu-west-1.amazonaws.com']
 
 
 # Application definition
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str (BASE_DIR / 'db.sqlite3'),
     }
 }
 
